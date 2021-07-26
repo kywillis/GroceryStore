@@ -22,6 +22,7 @@ namespace GroceryStoreAPI.Controllers
         }
 
         [Route("/error")]
+        [HttpGet]
         public IActionResult Error()
         {
             var context = HttpContext.Features.Get<IExceptionHandlerFeature>();
